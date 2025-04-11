@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>이원정보기술</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- favicon -->
+    <link rel="icon" href="../img/favicon.ico">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='../css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/sub.css'>
+    
+    <!-- js -->
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> 
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<!-- body -->
+<body class="body">
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- 공통 header -->
+        <header id="header"></header>
+        <!-- //header -->
+        
+        <!-- sub_topOuter 공통 메뉴바 -->
+        <div class="sub_topOuter">
+            <!-- sub_visual -->
+            <div class="sub_visual" style="background-image: url(../img/company.png);background-position: center;">
+                <!-- sub_visual_text -->
+                <div class="inner">
+                    <div class="sub_visual_text slide-in-up delay01">
+                        <h1 class="sub_Title">회사 소개</h1>
+                        <p class="sub_subtitle">고객과 함께 미래를 만드는 최고의 파트너 E1</p>
+                    </div> 
+                </div>
+                <!-- sub_lnb -->
+                <div class="sub_lnb">
+                    <div class="sub_wrap inner">
+                        <!-- Slides -->
+                        <div class="sub_list">
+                            <a href="ceo.html">CEO 인사말</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="vision.html">Mission & Goal</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="history.html" class="active">연혁</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="organize.html">조직도</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="esg.html">ESG</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="employ.html">인재 채용</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="path.html">오시는 길</a>
+                        </div>
+                    </div>
+                </div><!-- //sub_lnb -->
+            </div><!-- //sub_visual -->
+        </div> <!-- //sub_topOuter -->
+
+        <!--container-->
+        <div class="container inner" id="section">
+            <!-- container_header -->
+            <div class="container_header">
+                <div class="sub_tit slide-in-up delay02">회사연혁</div>
+            </div> <!-- //container_header -->
+
+            <!-- container_body -->
+            <div class="container_body last-con ofhidden">
+                <!-- history_idx -->
+                <ul class="history_idx scroll-nav slide-in-up delay02">
+                    <div class="subb_text">E1의 24년 역사</div>
+                    <div class="subbb_text">History</div>
+                    <div class="idx_list" id="idx_list">
+                        <li class="on"><a href='#history1'><em><span>2020~현재</span></em></a></li>
+                        <li class=""><a href='#history2'><em><span>2010~2019</span></em></a></li>
+                        <li class=""><a href='#history3'><em><span>1999~2009</span></em></a></li>
+                    </div>
+                </ul> <!-- //history_idx -->
+
+                <!-- historyWrap -->
+                <div class="historyWrap slide-in-up delay03">
+                    <!-- history1 -->
+                    <div class="history" id="history1">
+                        <div class="years">2020~현재</div>
+                        <!-- history_content -->
+                        <ul class="history_content">
+                            <!-- 2023 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2023</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>12</b></p>
+                                        <p class="description">Dynatrace Advanced 파트너 선정</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2022 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2022</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>03</b></p>
+                                        <p class="description">ESG 기업 인증</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2021 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2021</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>12</b></p>
+                                        <p class="description">Google Cloud 파트너 계약</p>
+                                    </li>
+                                    <li>
+                                        <p><b>04</b></p>
+                                        <p class="description">의왕 지사 개소</p>
+                                    </li>
+                                    <li>
+                                        <p><b>03</b></p>
+                                        <p class="description">AWS 파트너 계약</p>
+                                    </li>
+                                    <li>
+                                        <p><b>01</b></p>
+                                        <p class="description">한국 Redhat GPS Service 파트너 계약</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2020 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2020</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>06</b></p>
+                                        <p class="description">Lufthansa System Consulting 파트너 계약</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul> <!-- //history_content -->
+                    </div>
+                    <!-- history2 -->
+                    <div class="history" id="history2">
+                        <div class="years">2010~2019</div>
+                        <!-- history_content -->
+                        <ul class="history_content">
+                            <!-- 2019 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2019</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>04</b></p>
+                                        <p class="description">판교테크노밸리 사옥 이전</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2018 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2018</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>09</b></p>
+                                        <p class="description">Dynatrace 파트너 계약</p>
+                                    </li>
+                                    <li>
+                                        <p><b>08</b></p>
+                                        <p class="description">Qmatic 한국총판 계약</p>
+                                    </li>
+                                    <li>
+                                        <p><b>07</b></p>
+                                        <p class="description">미라콤 MES 전문 협력사 계약</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2016 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2016</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>01</b></p>
+                                        <p class="description">Redhat 파트너 계약</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2011 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2011</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>08</b></p>
+                                        <p class="description">IBM Premier Business 협력사 선정</p>
+                                    </li>
+                                </ul>
+                           </li>
+                         </ul> <!-- //history_content -->
+                    </div>
+                    <!-- history3 -->
+                    <div class="history" id="history3">
+                        <div class="years">1999~2009</div>
+                        <!-- history_content -->
+                        <ul class="history_content">
+                            <!-- 2008 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2008</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>12</b></p>
+                                        <p class="description">INNOBIZ 인증획득</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2007 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2007</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>09</b></p>
+                                        <p class="description">ESB 모니터링, eMP, Xblock 프로그램 저작권 등록</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2004 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2004</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>06</b></p>
+                                        <p class="description">벤처기업 인증획득-중소기업청</p>
+                                    </li>
+                                    <li>
+                                        <p><b>03</b></p>
+                                        <p class="description">삼성SDS EAI 부문 협력 파트너사 선정</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2003 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2003</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>10</b></p>
+                                        <p class="description">LG CNS EAI 솔루션 공급 및 파트너사 선정</p>
+                                    </li>
+                                    <li>
+                                        <p><b>10</b></p>
+                                        <p class="description">기업 부설 연구소 설립</p>
+                                    </li>
+                                    <li>
+                                        <p><b>07</b></p>
+                                        <p class="description">Enterprise1 ERP/ES1 Ver 2.0 프로그램 심의조정위원회 등록</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2002 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2002</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>02</b></p>
+                                        <p class="description">SK C&C EAI 솔루션 공급 및 파트너사 선정</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2001 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2001</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>11</b></p>
+                                        <p class="description">한국IBM H/W BP사 등록 및 EAI Solution 전문 협력사</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 2000 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>2000</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>12</b></p>
+                                        <p class="description">(주)이원정보기술 법인전환</p>
+                                    </li>
+                                    <li>
+                                        <p><b>01</b></p>
+                                        <p class="description">한국오라클(주) 협력업체 등록</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- 1999 -->
+                            <li>
+                                <div class="year">
+                                    <div class="circle"></div>
+                                    <b>1999</b>
+                                </div>
+                                <ul class="txt">
+                                    <li>
+                                        <p><b>08</b></p>
+                                        <p class="description">코오롱정보통신(주) 협력업체 등록</p>
+                                    </li>
+                                    <li>
+                                        <p><b>07</b></p>
+                                        <p class="description">아이앤티코리아 설립</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul> <!-- //history_content -->
+                    </div>
+                </div> <!-- //historyWrap -->
+            </div> <!-- //container_body -->
+        </div> <!-- //Container -->
+
+        <!-- topbtn -->
+        <div class="topbtn"></div>
+
+        <!--footer-->
+        <footer id="footer" class="footer"></footer>
+        <!--//footer-->
+    </div> <!--//wrap-->
+    <script src="../js/include.js"></script>
+</body> <!-- //body -->
+</html>

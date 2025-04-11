@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>이원정보기술</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- favicon -->
+    <link rel="icon" href="../img/favicon.ico">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='../css/reset.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/sub.css'>
+
+    <!-- js -->
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> 
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<style>
+    a {text-decoration: none !important;}
+    .inquiry_top_btn {padding: 4px 29px;}
+    .gnb_gnb {padding-left: 0 !important}
+    .site-menu .site-gnb {padding-left: 0 !important;}
+</style>
+<!-- body -->
+<body class="body">
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- 공통 header -->
+        <header id="header"></header>
+        <!-- //header -->
+        
+        <!-- sub_topOuter 공통 메뉴바 -->
+        <div class="sub_topOuter">
+            <!-- sub_visual -->
+            <div class="sub_visual" style="background-image: url(../img/inquiry_bg.png);background-position: center;">
+                <!-- sub_visual_text -->
+                <div class="inner">
+                    <div class="sub_visual_text slide-in-up delay01">
+                        <h1 class="sub_Title">문의하기</h1>
+                        <!-- <p class="sub_subtitle">문의 주시면 가능한 빨리 자세한 답변 드리도록 하겠습니다.</p> -->
+                    </div> 
+                </div>
+            </div><!-- //sub_visual -->
+        </div> <!-- //sub_topOuter -->
+
+        <!--container-->
+        <div class="container inner" id="section">
+            <!-- 개인정보 이용정책 모달창 -->
+            <div class="modal" id="information" tabindex="-1" aria-labelledby="informationLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                   <div class="modal-content" id="informationLabel">
+                        <!-- 닫기버튼 -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="law">
+                            <p>개인정보 수집 이용에 대한 내용</p>
+                            <p>
+                                (주)이원정보기술은 고객님의 홈페이지 문의 서비스 이용을 위해 필요한 최소한의 개인정보만을 수집 및 이용합니다.
+                                귀하가 이원 홈페이지의 서비스를 이용하기 위해서는  이름, 이메일 등을 입력하셔야 하며, 입력하신 정보는 서비스 제공에 사용됩니다.
+                            </p>
+                            <p>[수집항목] 이름, 이메일, 회사명</p>
+                            <p>개인정보의 보유 및 이용기간</p>
+                            <p>수집된 개인정보는 원칙적으로 문의 후 1개월 또는 업무 목적 달성 시 지체없이 파기합니다.</p>
+                            <p>[보존항목] 회사명, 이름, 이메일</p>
+                            <p>[보존근거] 질의응당 관리 및 재 문의시 확인</p>
+                            <p>[보존기간] 약 2년</p>
+                            <p>
+                                다만, 수집목적 또는 제공받은 목적이 달성된 경우에도 상법 등 법력의 규정에 의하여 보존할 필요성이 있는 경우에는 귀하의 개인정보를 보유할 수 있습니다.
+                            </p>
+                        </div>
+                   </div>
+                </div>
+             </div>
+            <!-- container_header -->
+            <div class="container_header">
+                <div class="sub_tit slide-in-up delay02">문의하기</div>
+            </div> <!-- //container_header -->
+
+            <!-- container_body -->
+            <div class="container_body last-con slide-in-up delay02">
+                <!-- form -->
+                <form class="needs-validation" novalidate>
+                    <!-- formWrap -->
+                    <div class="formWrap">
+                        <ul class="form_ul">
+                            <!-- 이름 -->
+                            <li>
+                                <div class="form_header">
+                                    <label for="form-name">이름</label>
+                                </div>
+                                <div class="form_data">
+                                    <input id="form-name" class="form-control" type="text" placeholder="이름을 입력하세요." name="name" required>
+                                </div>
+                            </li>
+                            <!-- 업체명 -->
+                            <li>
+                                <div class="form_header">
+                                    <label for="form-company">업체명</label>
+                                </div>
+                                <div class="form_data">
+                                    <input id="form-company" class="form-control" type="text" placeholder="업체명을 입력해주세요." name="company" required>
+                                </div>
+                            </li>
+                            <!-- 연락처 -->
+                            <li>
+                                <div class="form_header">
+                                    <label for="form-number">연락처</label>
+                                </div>
+                                <div class="form_data">
+                                    <input id="form-number" class="form-control" type="text" pattern="\d*" placeholder="번호를 입력해주세요. ( ‘-’없이 입력 )" name="number" required>
+                                </div>
+                            </li>
+                            <!-- 이메일 -->
+                            <li>
+                                <div class="form_header">
+                                    <label for="input07">이메일</label>
+                                </div>
+                                <div class="form_data">
+                                    <div class="form-mail">
+                                        <input type="email" class="form-control" name="str_email01" id="str_email01" placeholder="이메일을 입력해주세요." required>                              
+                                        <!-- <select name="selectEmail" id="selectEmail">
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="paran.com">paran.com</option>
+                                            <option value="empal.com">empal.com</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="dreamwiz.com">dreamwiz.com</option>
+                                            <option value="lycos.co.kr">lycos.co.kr</option>
+                                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                            <option value="korea.com">korea.com</option>
+                                            <option value="hanmir.com">hanmir.com</option>
+                                        </select> -->
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 내용 -->
+                            <li>
+                                <div class="form_header">
+                                    <label for="form-text">문의내용</label>
+                                </div>
+                                <div class="form_data" id="form-keyup">
+                                    <textarea class="substance-box form-control" id="substance" placeholder="문의사항을 기입해주세요." name="substance" required></textarea>
+                                    <!-- <div id="text_cnt">0/300</div> -->
+                                </div>
+                            </li>
+                            <!-- 첨부파일 -->
+                            <!-- <li>
+                                <div class="form_header">
+                                    <label for="form-file">첨부파일</label>
+                                </div>
+                                <div class="form_data">
+                                    <input type="file" name="file" id="form-file" accept="image/*">
+                                </div>
+                            </li> -->
+                            <!-- 개인정보 -->
+                            <div class="information_btn_wrap">
+                                <input type="checkbox" class="" id="info" name="info" onchange="my_checkbox_class(this)">
+                                <label for="info">
+                                    <button type="button" class="information_btn" data-bs-toggle="modal" data-bs-target="#information">개인정보 이용정책</button>에 동의합니다.
+                                </label>
+                            </div>
+                        </ul>
+
+                        <!-- 버튼 -->
+                        <div class="inquiry_wrap">
+                            <button class="inquiry_btn" type="submit">
+                                <p>등록하기</p>
+                            </button>
+                        </div>
+                    </div> <!-- //formWrap -->
+                </form> <!-- //form -->
+            </div> <!-- //container_body -->
+        </div> <!-- //Container -->
+        <!-- topbtn -->
+        <div class="topbtn"></div>
+
+        <!--footer-->
+        <footer id="footer" class="footer"></footer>
+        <!--//footer-->
+    </div> <!--//wrap-->
+    <script>
+        // form 유효성 검사
+        let fail = false;
+
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    alert("필수 내용을 입력해 주세요.")
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    if (!fail) {   
+                        alert("개인정보 이용정책에 동의해 주세요.")
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        sendWebhook();
+                        alert("빠른 시일 내에 답변드리겠습니다.")
+                    }
+                }
+                form.classList.add('was-validated')
+
+            }, false)
+            })
+        })()
+
+        // 체크박스 선택시 부모에 클래스명 추가
+        function my_checkbox_class(input){
+            if(jQuery(input).prop('checked') == true){
+                jQuery(input).parent().addClass('checked');
+                jQuery(".information_btn").addClass('checked');
+                fail = true;
+            }
+            else{
+                jQuery(input).parent().removeClass('checked');
+                jQuery(".information_btn").removeClass('checked');
+                fail = false;
+            }
+        }
+
+        function sendWebhook() {
+            const name = document.getElementById('form-name').value;
+            const company = document.getElementById('form-company').value;
+            const tel = document.getElementById('form-number').value;
+            const email = document.getElementById('str_email01').value;
+            const contents = document.getElementById('substance').value;
+
+            const data = {
+                name: name,
+                company: company,
+                tel: tel,
+                email: email,
+                contents: contents,
+            };
+
+            fetch('https://webhook-handler.switstore.io/webhook/0622333a-24e9-41cb-84bf-21f033bd0699', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data),
+                mode: 'no-cors' // This will disable CORS but also prevent the server from seeing the body content properly.
+            })
+            .then(response => {
+                console.log('Request sent.');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+    <script src="../js/include.js"></script>
+</body> <!-- //body -->
+</html>

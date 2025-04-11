@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>이원정보기술 관리자시스템</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='../css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/sub.css'>
+    <link rel='stylesheet' type='text/css' href='../css/admin.css'>
+
+    <!-- js -->
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<!-- body -->
+<body class="body">
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- 공통 header -->
+        <header>
+            <!-- inner -->
+            <div class="inner">
+                <!-- logo -->
+                <div class="logo"> <a href="../index.html" alt="이원정보기술">이원정보기술</a> </div>
+                <!-- nav -->
+                <nav class="nav">
+                    <!-- 회사소개 -->
+                    <div class="menu">
+                        <a href="../company/company1.html">회사소개</a>
+                        <div class="button">
+                            <div class="button-item"></div>
+                        </div>
+                        <ul class="gnb">
+                            <li>
+                                <a href="../company/company1.html">CEO 인사말</a>
+                            </li>
+                            <li>
+                                <a href="../company/company2.html">비전 및 경영이념</a>
+                            </li>
+                            <li>
+                                <a href="../company/company3.html">연혁</a>
+                            </li>
+                            <li>
+                                <a href="../company/company4.html">조직도</a>
+                            </li>
+                            <li>
+                                <a href="../company/company5.html">지속가능경영</a>
+                            </li>
+                            <li>
+                                <a href="../company/company6.html">인재채용</a>
+                            </li>
+                            <li>
+                                <a href="../company/company7.html">오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 솔루션 -->
+                    <div class="menu">
+                        <a href="#">솔루션</a>
+                        <div class="button">
+                            <div class="button-item"></div>
+                        </div>
+                        <ul class="gnb">
+                            <li>
+                                <a href="">API & EAI</a>
+                                <div class="down">
+                                    <div class="down_item"></div>
+                                </div>
+                                <ul class="gnb_gnb">
+                                    <li>
+                                        <a href="#">- IBM APIC & EAI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Google Apigee</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Redhat FUSE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- AWS API GateWay</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cloud Monitoring</a>
+                                <div class="down">
+                                    <div class="down_item"></div>
+                                </div>
+                                <ul class="gnb_gnb">
+                                    <li>
+                                        <a href="#">- Dynatrace</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- OpenSearch</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- RMS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ETC</a>
+                                <div class="down">
+                                    <div class="down_item"></div>
+                                </div>
+                                <ul class="gnb_gnb">
+                                    <li>
+                                        <a href="#">- Lufthansa System</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Qmatic</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 서비스 -->
+                    <div class="menu">   
+                        <a href="#">서비스</a>
+                        <div class="button">
+                            <div class="button-item"></div>
+                        </div>
+                        <ul class="gnb">
+                            <li>
+                                <a href="#">SI Consulting & Development</a>
+                            </li>
+                            <li>
+                                <a href="#">EAI/Open API Consulting & Inplementation</a>
+                            </li>
+                            <li>
+                                <a href="#">Google Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">AWS Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Dynatrace Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">IBM Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Redhat Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">MES Miracom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">글로벌 웹접근성 검수 Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 고객지원 -->
+                    <div class="menu select">
+                        <a href="../support/support1.html">고객지원</a>
+                        <div class="button">
+                            <div class="button-item"></div>
+                        </div>
+                        <ul class="gnb" style="display: block;">
+                            <li>
+                                <a href="../support/support1.html">Notice</a>
+                            </li>
+                            <li>
+                                <a href="../support/support2.html">문의하기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav> <!-- //nav -->
+                <!-- moblie_nav_btn -->
+                <div class="moblie_nav_btn"></div>
+                <!-- sitemapbtn -->                  
+                <div class="sitemap-btn"></div>
+            </div> <!-- //inner -->
+
+            <!-- sitemap_nav -->
+            <div class="sitemap_nav">
+                <!-- inner -->
+                <div class="inner layer">
+                    <!-- 회사소개 -->
+                    <div class="site-menu">
+                        <a href="../company/company1.html">회사소개</a>
+                        <ul class="site-gnb">
+                            <li>
+                                <a href="../company/company1.html">CEO 인사말</a>
+                            </li>
+                            <li>
+                                <a href="../company/company2.html">비전 및 경영이념</a>
+                            </li>
+                            <li>
+                                <a href="../company/company3.html">연혁</a>
+                            </li>
+                            <li>
+                                <a href="../company/company4.html">조직도</a>
+                            </li>
+                            <li>
+                                <a href="../company/company5.html">지속가능경영</a>
+                            </li>
+                            <li>
+                                <a href="../company/company6.html">인재채용</a>
+                            </li>
+                            <li>
+                                <a href="../company/company7.html">오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 솔루션 -->
+                    <div class="site-menu">
+                        <a href="#">솔루션</a>
+                        <ul class="site-gnb">
+                            <li>
+                                <a href="">API & EAI</a>
+                                <ul class="site-gnb_gnb">
+                                    <li>
+                                        <a href="#">IBM APIC & EAI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Google Apigee</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Redhat FUSE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">AWS API GateWay</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cloud Monitoring</a>
+                                <ul class="site-gnb_gnb">
+                                    <li>
+                                        <a href="#">Dynatrace</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">OpenSearch</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">RMS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ETC</a>
+                                <ul class="site-gnb_gnb">
+                                    <li>
+                                        <a href="#">Lufthansa System</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Qmatic</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 서비스 -->
+                    <div class="site-menu">   
+                        <a href="#">서비스</a>
+                        <ul class="site-gnb">
+                            <li>
+                                <a href="#">SI Consulting & Development</a>
+                            </li>
+                            <li>
+                                <a href="#">EAI/Open API Consulting & Inplementation</a>
+                            </li>
+                            <li>
+                                <a href="#">Google Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">AWS Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Dynatrace Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">IBM Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Redhat Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">MES Miracom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">글로벌 웹접근성 검수 Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 고객지원 -->
+                    <div class="site-menu">
+                        <a href="../support/support1.html">고객지원</a>
+                        <ul class="site-gnb">
+                            <li>
+                                <a href="../support/support1.html">Notice</a>
+                            </li>
+                            <li>
+                                <a href="../support/support2.html">문의하기</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="background"></div>
+                </div> <!-- //inner -->
+            </div> <!-- //sitemap_nav -->
+            <!-- gnbWrap -->
+            <div class="gnbWrap"></div>
+        </header> <!-- //header -->
+        
+        <!-- sub_topOuter 공통 메뉴바 -->
+        <div class="sub_topOuter">
+            <!-- sub_visual -->
+            <div class="sub_visual" style="background-image: url(../img/support.jpeg);background-position: center;">
+                <!-- sub_visual_text -->
+                <div class="inner">
+                    <div class="sub_visual_text slide-in-up delay01">
+                        <h1 class="sub_Title">고객지원</h1>
+                        <p class="sub_subtitle">이원정보기술의 새로운 소식을 만나보세요.</p>  
+                    </div> 
+                </div>
+                <!-- sub_lnb -->
+                <div class="sub_lnb">
+                    <div class="sub_wrap inner">
+                        <!-- Slides -->
+                        <div class="sub_list">
+                            <a href="support1.html" class="active">Notice</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="support2.html">문의하기</a>
+                        </div>
+                    </div>
+                </div><!-- //sub_lnb -->
+            </div><!-- //sub_visual -->
+        </div> <!-- //sub_topOuter -->
+
+        <!--container-->
+        <div class="container inner">
+            <!-- container_header -->
+            <div class="container_header">
+                <div class="sub_tit slide-in-up delay02">Notice</div>
+            </div> <!-- //container_header -->
+
+            <!-- container_body -->
+            <div class="container_body">
+                <!-- table-layout -->
+                <div class="notice-layout slide-in-up delay02">
+                    <button type="button" class="click">전체</button>  
+                    <button type="button">E1소식</button>
+                    <button type="button">실적</button>
+                    <a href="admin-support1-view.html" class="blue-box">글쓰기</a>
+                </div>
+                <!-- notice-table -->
+                <div class="notice-table slide-in-up delay03">
+                    <a href="support1-view.html" class="table">
+                        <div class="table-img"></div>
+                        <div class="table-text">
+                            <h4>E1소식</h4>
+                            <span>이원정보기술 소식지를 창간하게 되었습니다.</span>
+                            <p>2023. 06. 30</p>
+                        </div>
+                    </a>
+                    <a href="support1-view.html" class="table">
+                        <div class="table-img"></div>
+                        <div class="table-text">
+                            <h4>E1소식</h4>
+                            <span>이원정보기술 소식지를 창간하게 되었습니다.</span>
+                            <p>2023. 06. 30</p>
+                        </div>
+                    </a>
+                    <a href="support1-view.html" class="table">
+                        <div class="table-img"></div>
+                        <div class="table-text">
+                            <h4>E1소식</h4>
+                            <span>이원정보기술 소식지를 창간하게 되었습니다.</span>
+                            <p>2023. 06. 30</p>
+                        </div>
+                    </a>
+                    <a href="support1-view.html" class="table">
+                        <div class="table-img"></div>
+                        <div class="table-text">
+                            <h4>E1소식</h4>
+                            <span>이원정보기술 소식지를 창간하게 되었습니다.</span>
+                            <p>2023. 06. 30</p>
+                        </div>
+                    </a>
+                    <a href="support1-view.html" class="table">
+                        <div class="table-img"></div>
+                        <div class="table-text">
+                            <h4>E1소식</h4>
+                            <span>이원정보기술 소식지를 창간하게 되었습니다.</span>
+                            <p>2023. 06. 30</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- pages -->
+                <div class="pages slide-in-up delay02">
+					<button type="button" class="btPrev end" disabled>처음 페이지</button>
+					<button type="button" class="btPrev h" disabled>이전 페이지</button>
+					<a href="" class="pg on">1</a>
+					<a href="" class="pg">2</a>
+					<a href="" class="pg">3</a>
+					<a href="" class="pg">4</a>
+					<a href="" class="pg">5</a>
+					<button type="button" class="btNext">다음 페이지</button>
+					<button type="button" class="btNext end">마지막 페이지</button>
+				</div>
+            </div> <!-- //container_body -->
+        </div> <!-- //Container -->
+                        
+        <!-- topbtn -->
+        <div class="topbtn"></div>
+
+        <!--footer-->
+        <footer class="footer">
+            <!-- footer_inner -->
+            <div class="footer-wrap inner">
+                <!-- footer_nav -->
+                <nav class="nav">
+                    <!-- 회사소개 -->
+                    <div class="menu">
+                        <a href="../company/company1.html">회사소개</a>
+                        <div class="button">
+                            <div class="button-item"></div>
+                        </div>
+                        <ul class="gnb">
+                            <li>
+                                <a href="../company/company1.html">CEO 인사말</a>
+                            </li>
+                            <li>
+                                <a href="../company/company2.html">비전 및 경영이념</a>
+                            </li>
+                            <li>
+                                <a href="../company/company3.html">연혁</a>
+                            </li>
+                            <li>
+                                <a href="../company/company4.html">조직도</a>
+                            </li>
+                            <li>
+                                <a href="../company/company5.html">지속가능경영</a>
+                            </li>
+                            <li>
+                                <a href="../company/company6.html">인재채용</a>
+                            </li>
+                            <li>
+                                <a href="../company/company7.html">오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 솔루션 -->
+                    <div class="menu">
+                        <a href="#">솔루션</a>
+                        <div class="button">
+                            <div class="button-item"></div>
+                        </div>
+                        <ul class="gnb">
+                            <li>
+                                <a href="">API & EAI</a>
+                                <div class="down">
+                                    <div class="down_item"></div>
+                                </div>
+                                <ul class="gnb_gnb">
+                                    <li>
+                                        <a href="#">- IBM APIC & EAI</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Google Apigee</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Redhat FUSE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- AWS API GateWay</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cloud Monitoring</a>
+                                <div class="down">
+                                    <div class="down_item"></div>
+                                </div>
+                                <ul class="gnb_gnb">
+                                    <li>
+                                        <a href="#">- Dynatrace</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- OpenSearch</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- RMS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ETC</a>
+                                <div class="down">
+                                    <div class="down_item"></div>
+                                </div>
+                                <ul class="gnb_gnb">
+                                    <li>
+                                        <a href="#">- Lufthansa System</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Qmatic</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 서비스 -->
+                    <div class="menu">   
+                        <a href="#">서비스</a>
+                        <div class="button">
+                            <div class="button-item"></div>
+                        </div>
+                        <ul class="gnb">
+                            <li>
+                                <a href="#">SI Consulting & Development</a>
+                            </li>
+                            <li>
+                                <a href="#">EAI/Open API Consulting & Inplementation</a>
+                            </li>
+                            <li>
+                                <a href="#">Google Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">AWS Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Dynatrace Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">IBM Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Redhat Partner Service</a>
+                            </li>
+                            <li>
+                                <a href="#">MES Miracom Service</a>
+                            </li>
+                            <li>
+                                <a href="#">글로벌 웹접근성 검수 Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 고객지원 -->
+                    <div class="menu">
+                        <a href="support1.html">고객지원</a>
+                        <div class="button">
+                            <div class="button-item"></div>
+                        </div>
+                        <ul class="gnb">
+                            <li>
+                                <a href="support1.html">Notice</a>
+                            </li>
+                            <li>
+                                <a href="support2.html">문의하기</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- sns -->
+                    <div class="sns">
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/e1_information_technology/" target = "_blank" alt="이원정보기술 인스타그램"></a>
+                        </div>
+                        <!-- <div class="facebook"></div>
+                        <div class="linkedin"></div> -->
+                    </div>
+                </nav> <!-- //footer_nav -->
+                <!-- line -->
+                <div class="line">
+                    <!-- footer_logo -->
+                    <div class="footer_logo"> <a href="../index.html" alt="이원정보기술">이원정보기술</a></div>
+                    <!-- text -->
+                    <div class="footer_text">
+                        <ul>
+                            <li>
+                                <a href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">이메일무단수집거부</a>
+                            </li>
+                            <li>
+                                <a href="#">오시는 길</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- address -->
+                <div class="address">
+                     <ul>
+                        <li>경기도 성남시 분당구 판교역로 231 H스퀘어 S동 811호</li>
+                        <li>대표전화 : 031-365-4201</li>
+                        <li>Copyright ©E1. All rights reserved.</li>
+                     </ul>
+                </div>
+            </div> <!-- //footer_inner -->
+        </footer> <!--//footer-->
+    </div> <!--//wrap-->
+</body> <!-- //body -->
+</html>
+<script>
+    // nav depth 경로 설정 -- 변수는 페이지마다 각각 설정 (사용안하는 변수는 0으로 선언)
+    var depth1=4
+    var depth2=1
+    var depth3=4
+    var depth4=1
+
+    $(document).ready(function() {
+    if(depth1>0){
+      $('header>.inner>.nav > .menu:eq('+( depth1-1 )+') > a').addClass('path');
+      if(depth2>0){
+        $('header>.inner>.nav .menu:eq('+( depth1-1 )+') > .gnb > li:eq('+( depth1-4 )+') > a').addClass('path');
+      };
+    };
+    if(depth3>0){
+      $('.footer>.footer-wrap>.nav > .menu:eq('+( depth3-1 )+') > a').addClass('path');
+      if(depth4>0){
+        $('.footer>.footer-wrap>.nav .menu:eq('+( depth3-1 )+') > .gnb > li:eq('+( depth3-4 )+') > a').addClass('path');
+      };
+    };
+  });
+    
+</script>

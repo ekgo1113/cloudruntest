@@ -1,0 +1,214 @@
+.body {
+    position: relative;
+}
+
+.blue-box {
+    width: 120px;
+    height: 40px;
+    background: #0060CA;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* admin - login */
+.login-bg {
+    width: 100%;
+    height: 300px;
+    background: url(../img/login-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.login-logo {
+    width: 205px;
+    height: 27px;
+    background: url(../img/logo_w.svg);
+    position: absolute;
+    bottom: 20px;
+    left: 96px;
+}
+
+.login-box {
+    position: absolute;
+    width: 474px;
+    height: 383px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 187px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 46px 50px;
+    gap: 24px;
+}
+
+.login-box .login-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    color: #344767;
+}
+
+.login-box form .id {
+    padding: 12px;
+    width: 382px;
+    height: 40px;
+    border: 1px solid #CED4DA;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ADB5BD;
+    margin-bottom: 24px;
+}
+
+.login-box form .pw {
+    padding: 12px;
+    width: 382px;
+    height: 40px;
+    border: 1px solid #CED4DA;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #ADB5BD;
+    margin-bottom: 24px;
+}
+
+.login-box form .check {
+    width: 382px;
+    height: 40px;
+    display: block;
+}
+
+.login-box form .check label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.login-box form .login-btn {
+    width: 382px;
+    height: 40px;
+    background: #343A40;
+    border-radius: 8px;    
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* admin-support1 */
+.notice-layout a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+/* admin-support1 */
+.select-wrap {
+    border: 1px solid rgba(17, 17, 19, 0.2);
+    border-radius: 4px;
+    width: 210px;
+    height: 48px;
+    padding: 13px 16px;
+    background:url('../img/admin-Arrow-Down.svg') no-repeat;
+    background-position: center right 20px;
+    margin-bottom: 20px;
+}
+
+select {
+    width:100%;
+    height:100%;
+    padding:0 28px 0 10px;
+    font-size: 15px;
+    border:0;
+    -webkit-appearance:none; /* for chrome */
+    -moz-appearance:none; /*for firefox*/
+    appearance:none;
+    background:transparent;
+}
+ 
+select::-ms-expand{
+    display:none; /*for IE10,11*/
+}
+
+.form-header {
+    width: 100%;
+    height: 148px;
+    border-top: 1px solid #222222;
+}
+
+.adminview-titie {
+    border: 1px solid #C7C7C7;
+    width: 90%;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+    color: #222222;
+}
+
+.adminview-day {
+    width: 175px;
+    height: 30px;
+    border: 1px solid #C7C7C7;
+    border-radius: 4px;
+    float: right;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+    padding: 10px;
+}
+
+.form-body {
+    margin-top: 20px;
+}
+
+.adminview {
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+    width: 100%;
+    height: 500px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.btns {
+    padding-top: 75px;
+    text-align: center;
+}
+
+.btns .list a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}

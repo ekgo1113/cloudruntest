@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>이원정보기술</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- favicon -->
+    <link rel="icon" href="../img/favicon.ico">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='../css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='../css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../css/sub.css'>
+
+    <!-- js -->
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> 
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<!-- body -->
+<body class="body">
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- 공통 header -->
+        <header id="header"></header>
+        <!-- //header -->
+        
+        <!-- sub_topOuter 공통 메뉴바 -->
+        <div class="sub_topOuter">
+            <!-- sub_visual -->
+            <div class="sub_visual" style="background-image: url(../img/pr.png);background-position: center;">
+                <!-- sub_visual_text -->
+                <div class="inner">
+                    <div class="sub_visual_text slide-in-up delay01">
+                        <h1 class="sub_Title">홍보센터</h1>
+                        <p class="sub_subtitle">이원정보기술의 새로운 소식을 만나보세요.</p>  
+                    </div> 
+                </div>
+                <!-- sub_lnb -->
+                <div class="sub_lnb">
+                    <div class="sub_wrap inner">
+                        <!-- Slides -->
+                        <div class="sub_list">
+                            <a href="notice.html">뉴스</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="magazine.html" class="active">사보</a>
+                        </div>
+                        <div class="sub_list">
+                            <a href="video.html">영상</a>
+                        </div>
+                    </div>
+                </div><!-- //sub_lnb -->
+            </div><!-- //sub_visual -->
+        </div> <!-- //sub_topOuter -->
+
+        <!--container-->
+        <div class="container inner" id="section">
+            <!-- container_header -->
+            <div class="container_header">
+                <div class="sub_tit slide-in-up delay02">사보</div>
+            </div> <!-- //container_header -->
+
+            <!-- container_body -->
+            <div class="container_body last-con">
+                <!-- magazine_wrap -->
+                <div class="magazine_wrap slide-in-up delay03">
+                    <div class="magazine">
+                        <img src="../img/magazine/Vol_5.png">
+                        <!-- <iframe src="../file/Vol_5.pdf" title="example" width="100%" height="500" frameborder="0"></iframe> -->
+                        <a href="../file/Vol_5.pdf" target="_blank">PDF View<i class="zoom"></i></a>
+                        <p>2024 Vol.5 여름호</p>
+                    </div>
+                    <div class="magazine">
+                        <img src="../img/magazine/Vol_4.png">
+                        <a href="../file/Vol_4.pdf" target="_blank">PDF View<i class="zoom"></i></a>
+                        <p>2024 Vol.4 봄호</p>
+                    </div>
+                    <div class="magazine">
+                        <img src="../img/magazine/Vol_3.png">
+                        <a href="../file/Vol_3.pdf" target="_blank">PDF View<i class="zoom"></i></a>
+                        <p>2023 Vol.3 겨울호</p>
+                    </div>
+                    <div class="magazine">
+                        <img src="../img/magazine/Vol_2.png">
+                        <a href="../file/Vol_2.pdf" target="_blank">PDF View<i class="zoom"></i></a>
+                        <p>2023 Vol.2 가을호</p>
+                    </div>
+                    <div class="magazine">
+                        <img src="../img/magazine/Vol_1.png">
+                        <a href="../file/Vol_1.pdf" target="_blank">PDF View<i class="zoom"></i></a>
+                        <p>2023 Vol.1 여름호</p>
+                    </div>
+                </div>
+                <!-- pages -->
+                <div class="pages slide-in-up delay02">
+					<button type="button" class="btPrev end none" disabled>처음 페이지</button>
+					<button type="button" class="btPrev h none" disabled>이전 페이지</button>
+					<a class="pg on">1</a>
+					<!-- <a href="" class="pg">2</a>
+					<a href="" class="pg">3</a>
+					<a href="" class="pg">4</a>
+					<a href="" class="pg">5</a> -->
+					<button type="button" class="btNext none">다음 페이지</button>
+					<button type="button" class="btNext end none">마지막 페이지</button>
+				</div>
+            </div> <!-- //container_body -->
+        </div> <!-- //Container -->
+                        
+        <!-- topbtn -->
+        <div class="topbtn"></div>
+
+        <!--footer-->
+        <footer id="footer" class="footer"></footer>
+        <!--//footer-->
+    </div> <!--//wrap-->
+    <script>
+        document.addEventListener("contextmenu", function (e){
+            e.preventDefault();
+        });
+
+        document.addEventListener("keydown", function (e) {
+            if (e.ctrlKey || e.metaKey) {
+                e.preventDefault();
+            }
+        })
+    </script>
+    <script src="../js/include.js"></script>
+</body> <!-- //body -->
+</html>

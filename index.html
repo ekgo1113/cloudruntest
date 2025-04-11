@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>이원정보기술</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico">
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+    
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='css/common.css'>
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' href='css/slick.css'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script> 
+    <script src="js/main.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
+    <script src="js/common.js"></script>
+    <!-- <script src="js/card.js"></script> -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),
+            dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })
+        (window,document,'script','dataLayer','GTM-PGNJWRPL');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+<!-- body -->
+<body class="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGNJWRPL"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- wrap -->
+    <div class="wrap">
+        <!-- 공통 header -->
+        <header id="header"></header>
+        <!-- //header -->
+
+        <!--메인 비주얼 mv-->
+        <div class="slider-wrap con" data-slick-autoplay-status="Y">
+            <div class="slider main-slider con">
+                <div class="slide-item slide-item-1">
+                    <div class="slide-con">
+                        <div class="slide-dummy"></div>
+                        <div class="slide-txt inner">
+                            <span class="txt-desc">The Leading Company in Digital Transformation</span>
+                            <h2 class="txt-tt">최신 기술과 서비스 선도</h2>
+                        </div>
+                        <p>Happy and Vibrant E1</p>
+                        <!-- <img src="img/test01.jpg"> -->
+                        <video muted autoplay loop playsinline>
+                            <source src="img/video/test8.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                    </div>
+                </div>
+                <div class="slide-item slide-item-2">
+                    <div class="slide-con">
+                        <div class="slide-dummy"></div>
+                        <div class="slide-txt inner">
+                            <span class="txt-desc">The Leading Company in Digital Transformation</span>
+                            <h2 class="txt-tt">고객 만족과 가치 창출</h2>
+                        </div>
+                        <p>Happy and Vibrant E1</p>
+                        <!-- <img src="img/test02.jpg"> -->
+                        <video muted autoplay loop playsinline>
+                            <source src="img/video/main_bg02.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                    </div>
+                </div>
+                <div class="slide-item slide-item-3">
+                    <div class="slide-con">
+                        <div class="slide-dummy"></div>
+                        <div class="slide-txt inner">
+                            <span class="txt-desc">The Leading Company in Digital Transformation</span>
+                            <h2 class="txt-tt">변화 주도적 기업문화</h2>
+                        </div>
+                        <p>Happy and Vibrant E1</p>
+                        <video muted autoplay loop playsinline>
+                            <source src="img/video/main_bg03.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <button class="s-autoplay-btn"></button>
+        </div>
+        <!--//Container-->
+
+        <!--솔루션-->
+        <div id="section" class="inner">
+            <!--section_wrap-->
+            <div class="section_wrap">
+                <!--section_head-->
+                <div class="section_head">
+                    <div class="section_title">솔루션</div>
+                    <div class="section_sub">
+                        다양한 클라우드 자원을 고객 맞춤형으로<br>안전하고 편리하게 제공합니다.
+                    </div>
+                </div>
+                <!--//section_head-->
+                <!--section_body-->
+                <div class="section_body">
+                    <!-- card_section -->
+                    <div class="card_section">
+                        <!-- card_wrap -->
+                        <div class="card_wrap">
+                            <div class="card_in">
+                                <!--첫번째 card - API & EAI-->
+                                <a href="solution/api-apic.html" class="card">
+                                    <div class="card_bg"></div>
+                                    <div class="card_body">
+                                        <h3>API & EAI</h3>
+                                        <p>
+                                            API Connect는 API의 생성부터 내/외부 사용자 및 파트너에게 안전하게 
+                                            공개하여 API를 단일 접점으로 노출하고, API 호출에 있어 기업 환경에 필요한 보안/통합/제어/최적화를 지원하는 API 관리 솔루션입니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card_in">
+                                <!--두번째 card - Cloud Monitoring-->
+                                <a href="solution/cm-dynatrace.html" class="card">
+                                    <div class="card_bg"></div>
+                                    <div class="card_body">
+                                        <h3>Cloud Monitoring</h3>
+                                        <p>
+                                            Application 통합, UI 통합 그리고 B2B 통합에 이르기까지 다양한 형태로 
+                                            성장/발전하고 있는 EAI 산업의 요구사항을 충족하기 위해 (주)이원정보기술의 Rainbow Suite는 
+                                            그 solution의 타이틀과 같이 다양한 색깔을 가진 유연한 solution 으로 거듭 발전해 왔습니다.
+                                        </p>
+                                    </div>
+                                </a>
+                                <!--세번째 card - ETC-->
+                                <a href="solution/cm-rms.html" class="card">
+                                    <div class="card_bg"></div>
+                                    <div class="card_body">
+                                        <h3>Rainbow Suite</h3>
+                                        <p>어플리케이션간 연계를 보장하는 EAI/ESB 전문 솔루션으로 Database, Tuxedo/TMAX, File간의 통합 프로세스를 손쉽게 개발 및 관리하는 제품입니다.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--//card_wrap-->
+                    </div>
+                    <!-- card_section -->
+                </div><!--//section_body-->
+            </div><!--//section_wrap-->
+        </div>
+        <!--솔루션-->
+
+        <!-- 서비스 -->
+        <div id="section" class="inner pb80">
+            <!--section_wrap-->
+            <div class="section_wrap">
+                <!--section_head-->
+                <div class="section_head">
+                    <div class="section_title">서비스</div>
+                    <div class="section_sub">
+                        다양한 클라우드 자원을 고객 맞춤형으로 안전하고 편리하게 제공합니다.
+                    </div>
+                </div>
+                <!--//section_head-->
+                <!--section_body-->
+                <div class="section_body">
+                    <!--grid_wrap-->
+                    <div class="grid_wrap">
+                        <div class="grid" OnClick="location.href ='service/si.html'" style="cursor:pointer;">
+                            <p>SI Consulting & Development</p>
+                        </div>
+                        <div class="grid" OnClick="location.href ='service/service-api.html'" style="cursor:pointer;">
+                            <p>API, EAI Consulting & Implementation</p>
+                        </div>
+                        <div class="grid" OnClick="location.href ='service/mes.html'" style="cursor:pointer;">
+                            <p>MES Miracom Service</p>
+                        </div>
+                        <div class="grid" OnClick="location.href ='service/web.html'" style="cursor:pointer;">
+                            <p>Global 웹접근성 Service</p>
+                        </div>
+                    </div>
+                    <!--grid_wrap-->
+                </div><!--//section_body-->
+            </div><!--//section_wrap-->
+        </div>
+        <!-- //서비스 -->
+
+        <!-- 홍보센터 -->
+        <div class="gray_bg">
+            <div id="section" class="inner pb80">
+                <!--section_wrap-->
+                <div class="section_wrap">
+                    <!--section_head-->
+                    <div class="section_head">
+                        <div class="section_title">홍보센터</div>
+                        <div class="section_sub">
+                            E1 소식을 지금 만나보세요.
+                        </div>
+                    </div>
+                    <!--//section_head-->
+                    <!--section_body-->
+                    <div class="section_body">
+                        <!--pr_wrap-->
+                        <div class="pr_wrap">
+                            <div class="pr_box">
+                                <h3>뉴스</h3>
+                                <div class="pr" OnClick="location.href ='support/notice.html'">
+                                    <img src="img/news/240705.jpeg">
+                                    <p>2024년 상반기 리더그룹 워크샵</p>
+                                </div>
+                            </div>
+                            <div class="pr_box">
+                                <h3>영상</h3>
+                                <div class="pr" OnClick="location.href ='support/video.html'">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/iak9xJSbkac?si=bUjOZSdjOlZMV6DM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <p>Google Summit 2023 홍보영상</p>
+                                </div>
+                            </div>
+                            <div class="pr_box">
+                                <h3>사보</h3>
+                                <div class="pr" OnClick="location.href ='support/magazine.html'">
+                                    <img src="img/magazine/2024_summer.png">
+                                    <p>2024년 이원 스케치북 여름호</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--pr_wrap-->
+                    </div><!--//section_body-->
+                </div><!--//section_wrap-->
+            </div>
+        </div>
+        <!-- //홍보센터 -->
+
+        <!-- 파트너 -->
+        <div id="section" class="inner pb80">
+            <!--section_wrap-->
+            <div class="section_wrap">
+                <!--section_head-->
+                <div class="section_head">
+                    <div class="section_title">Reference</div>
+                    <div class="section_sub">
+                        다양한 레퍼런스 경험을 통해 협력사 및 파트너사에 최상의 서비스를 제공합니다.
+                    </div>
+                </div>
+                <!--//section_head-->
+                <!--section_body-->
+                <div class="section_body">
+                    <!-- <div class="title-wrap">
+                        <ul class="tab-wrap">
+                            <li class="active"><a href="#IBM" class="IBM">IBM</a></li>
+                            <li><a href="#Google" class="Google">Google</a></li>
+                            <li><a href="#Reddhat" class="Reddhat">Reddhat</a></li>
+                            <li><a href="#Dynatrace" class="Dynatrace">Dynatrace</a></li>
+                            <li><a href="#Miracom" class="Miracom">Miracom</a></li>
+                        </ul>
+                    </div> -->
+                    <!-- ALL -->
+                    <div class="logo-slide-wrap">
+                        <div class="logo-slide-tabbox active" id="all">
+                            <div class="logo-slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/koreanair.svg" alt="대한항공">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/lgu+.svg" alt="lgu+">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/hanjinkal.svg" alt="한진칼">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hL" src="img/partners/customs.svg" alt="관세청">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hS" src="img/partners/hyundai.svg" alt="현대">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/kt_cloud.svg" alt="kt_cloud">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/hanjin.svg" alt="한진">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/KB.svg" alt="KB국민은행">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/swit_black.svg" alt="swit">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hL" src="img/partners/autoever.svg" alt="현대오토에버">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hS" src="img/partners/kepco.svg" alt="한국전력공사">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hBL" src="img/partners/skhynix.svg" alt="sk하이닉스">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/kt.svg" alt="kt">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/LS.svg" alt="LS증권">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hBL" src="img/partners/sk_networks.svg" alt="sk_networks">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hL" src="img/partners/hanwhawm.svg" alt="한화투자증권">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hBL" src="img/partners/db-fi.svg" alt="DB금융투자">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hS" src="img/partners/miracom.svg" alt="미라콤">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/kt_alpha.svg" alt="kt알파쇼핑">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/metlife.svg" alt="metlife">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hBL" src="img/partners/idbins.svg" alt="DB손해보험">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hL" src="img/partners/kftc.svg" alt="금융결제원">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/lgcns.svg" alt="lgcns">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hL" src="img/partners/airport.svg" alt="인천공항공사">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/yeonhab.svg" alt="연합정밀">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hBL" src="img/partners/miraeasset.svg" alt="미래에셋증권">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hL" src="img/partners/ikea.svg" alt="ikea">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hBL" src="img/partners/idblife.svg" alt="DB생명">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hBL2" src="img/partners/skcc.svg" alt="sk주식회사">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/lgchem.svg" alt="LG화학">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hS" src="img/partners/ssg.svg" alt="ssg">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="hL" src="img/partners/hanwhasystems.svg" alt="한화시스템">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="" src="img/partners/serveone_en&logo.svg" alt="서브원">
+                                    </div>
+                                    <!-- <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/이베스트투자증권.svg" alt="이베스트투자증권">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h22" src="img/partners/serveone_en&logo.svg" alt="서브원">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/유진투자증권로고.svg" alt="유진투자증권">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/대신증권.svg" alt="대신증권">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h22" src="img/partners/한전KDN.svg" alt="한전KDN">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/한국공항공사.svg" alt="한국공항공사">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/한화큐셀.svg" alt="한화큐셀">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/한화에어로스페이스.svg" alt="한화에어로스페이스">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/동서식품.svg" alt="동서식품">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/NEXEN TIRE_Basic.svg" alt="NEXEN TIRE">
+                                    </div> -->
+                                </div>
+                                <button class="swiper-arrow prev" type="button"></button>
+                                <button class="swiper-arrow next" type="button"></button>
+                            </div>
+                        </div>
+                        <!-- Google -->
+                        <!-- <div class="logo-slide-tabbox" id="Google">
+                            <div class="logo-slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/대한항공.svg" alt="대한항공">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/한진칼.svg" alt="한진칼">
+                                    </div>
+                                </div>
+                                <button class="swiper-arrow prev" type="button"></button>
+                                <button class="swiper-arrow next" type="button"></button>
+                            </div>
+                        </div> -->
+                        <!-- Reddhat -->
+                        <!-- <div class="logo-slide-tabbox" id="Reddhat">
+                            <div class="logo-slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/대한항공.svg" alt="대한항공">
+                                    </div>
+                                </div>        
+                                <button class="swiper-arrow prev" type="button"></button>
+                                <button class="swiper-arrow next" type="button"></button>
+                            </div>
+                        </div> -->
+                        <!-- Dynatrace -->
+                        <!-- <div class="logo-slide-tabbox" id="Dynatrace">
+                            <div class="logo-slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/KB국민은행.svg" alt="KB국민은행">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/lgu+.svg" alt="lgu+">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/대한항공.svg" alt="대한항공">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/kt.svg" alt="kt">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/swit_black.svg" alt="swit">
+                                    </div>
+                                </div>
+                                <button class="swiper-arrow prev" type="button"></button>
+                                <button class="swiper-arrow next" type="button"></button>
+                            </div>
+                        </div> -->
+                        <!-- Miracom -->
+                        <!-- <div class="logo-slide-tabbox" id="Miracom">
+                            <div class="logo-slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/한화큐셀.svg" alt="한화큐셀">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img src="img/partners/한화에어로스페이스.svg" alt="한화에어로스페이스">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/동서식품.svg" alt="동서식품">
+                                    </div>
+                                    <div class="logo-slide-item swiper-slide">
+                                        <img class="h30" src="img/partners/NEXEN TIRE_Basic.svg" alt="NEXEN TIRE">
+                                    </div>
+                                </div>        
+                                <button class="swiper-arrow prev" type="button"></button>
+                                <button class="swiper-arrow next" type="button"></button>
+                            </div>
+                        </div> -->
+                    </div>
+                </div><!--//section_body-->
+            </div><!--//section_wrap-->
+        </div>
+        <!-- //파트너 -->
+
+        <!-- box-wrap -->
+        <div class="box-wrap">
+            <!-- 컨텐츠 esg -->
+            <div class="box-bg" style="background-image: url(img/esg.jpg);">
+                <div class="box-text">
+                    <span>ESG</span>
+                    <p>E1은 기업의 가치를 높이는<br> 지속가능한 미래를 만들어 갑니다.</p>
+                    <a class="mt35" href="company/esg.html">View More</a>
+                </div>
+            </div>
+            <!-- 컨텐츠 recruit -->
+            <div class="box-bg" style="background-image: url(img/recruit.jpg);">
+                <div class="box-text">
+                    <span>Recruit</span>
+                    <p>E1과 함께할 <br>역량있는 인재를 찾습니다.</p>
+                    <a class="mt35" href="company/employ.html">View More</a>
+                </div>
+            </div>
+        </div> <!-- //box-wrap -->
+        <!-- topbtn -->
+        <div class="topbtn"></div>
+
+        <!--footer-->
+        <footer id="footer" class="footer"></footer>
+        <!--//footer-->
+    </div> <!--//wrap-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4THH99S3X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-G4THH99S3X');
+    </script>
+    <script src="js/include.js"></script>
+</body> <!-- //body -->
+</html>
