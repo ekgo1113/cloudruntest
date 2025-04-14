@@ -1,0 +1,30 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'build', '-t',
+        'asia-northeast3-docker.pkg.dev/pacific-diode-387200/cloudruntest-repo/cloudruntest-image',
+        '.'
+      ]
+    dir: '.'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'push',
+        'asia-northeast3-docker.pkg.dev/pacific-diode-387200/cloudruntest-repo/cloudruntest-image'
+      ]
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      [
+        'run', 'deploy', 'cloudruntest-service',
+        '--image=asia-northeast3-docker.pkg.dev/pacific-diode-387200/cloudruntest-repo/cloudruntest-image',
+        '--region=asia-northeast3',
+        '--platform=managed',
+        '--allow-unauthenticated'
+      ]
+
+images:
+  - 'asia-northeast3-docker.pkg.dev/pacific-diode-387200/cloudruntest-repo/cloudruntest-image'
